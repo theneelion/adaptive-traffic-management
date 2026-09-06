@@ -1,0 +1,1851 @@
+{
+  "id": "city_v1",
+  "intersections": [
+    {
+      "id": "I1",
+      "x": 0,
+      "y": 0,
+      "phases": [
+        {
+          "id": "p1",
+          "allowedApproachIds": [
+            "i1_from_i3",
+            "i1_from_i7"
+          ],
+          "durationMs": 8000
+        },
+        {
+          "id": "p2",
+          "allowedApproachIds": [
+            "i1_from_i4",
+            "i1_from_i2"
+          ],
+          "durationMs": 8000
+        }
+      ]
+    },
+    {
+      "id": "I2",
+      "x": 320,
+      "y": -60,
+      "phases": [
+        {
+          "id": "p1",
+          "allowedApproachIds": [
+            "i2_from_i5",
+            "i2_from_i1"
+          ],
+          "durationMs": 8000
+        },
+        {
+          "id": "p2",
+          "allowedApproachIds": [
+            "i2_from_i3",
+            "i2_from_i6"
+          ],
+          "durationMs": 8000
+        }
+      ]
+    },
+    {
+      "id": "I3",
+      "x": 260,
+      "y": 300,
+      "phases": [
+        {
+          "id": "p1",
+          "allowedApproachIds": [
+            "far_i3"
+          ],
+          "durationMs": 8000
+        },
+        {
+          "id": "p2",
+          "allowedApproachIds": [
+            "i3_from_i1",
+            "i3_from_i2"
+          ],
+          "durationMs": 8000
+        }
+      ]
+    },
+    {
+      "id": "I4",
+      "x": -280,
+      "y": 210,
+      "phases": [
+        {
+          "id": "p1",
+          "allowedApproachIds": [
+            "i4_from_i1"
+          ],
+          "durationMs": 8000
+        },
+        {
+          "id": "p2",
+          "allowedApproachIds": [
+            "far_i4a",
+            "far_i4b"
+          ],
+          "durationMs": 8000
+        }
+      ]
+    },
+    {
+      "id": "I5",
+      "x": 620,
+      "y": 170,
+      "phases": [
+        {
+          "id": "p1",
+          "allowedApproachIds": [
+            "i5_from_i8"
+          ],
+          "durationMs": 8000
+        },
+        {
+          "id": "p2",
+          "allowedApproachIds": [
+            "far_i5",
+            "i5_from_i2"
+          ],
+          "durationMs": 8000
+        }
+      ]
+    },
+    {
+      "id": "I6",
+      "x": 600,
+      "y": -260,
+      "phases": [
+        {
+          "id": "p1",
+          "allowedApproachIds": [
+            "i6_from_i8"
+          ],
+          "durationMs": 8000
+        },
+        {
+          "id": "p2",
+          "allowedApproachIds": [
+            "i6_from_i2",
+            "i6_from_i9"
+          ],
+          "durationMs": 8000
+        }
+      ]
+    },
+    {
+      "id": "I7",
+      "x": -300,
+      "y": -240,
+      "phases": [
+        {
+          "id": "p1",
+          "allowedApproachIds": [
+            "far_i7a"
+          ],
+          "durationMs": 8000
+        },
+        {
+          "id": "p2",
+          "allowedApproachIds": [
+            "far_i7b",
+            "i7_from_i1"
+          ],
+          "durationMs": 8000
+        }
+      ]
+    },
+    {
+      "id": "I8",
+      "x": 930,
+      "y": -40,
+      "phases": [
+        {
+          "id": "p1",
+          "allowedApproachIds": [
+            "far_i8"
+          ],
+          "durationMs": 8000
+        },
+        {
+          "id": "p2",
+          "allowedApproachIds": [
+            "i8_from_i5",
+            "i8_from_i6"
+          ],
+          "durationMs": 8000
+        }
+      ]
+    },
+    {
+      "id": "I9",
+      "x": 260,
+      "y": -360,
+      "phases": [
+        {
+          "id": "p1",
+          "allowedApproachIds": [
+            "far_i9a"
+          ],
+          "durationMs": 8000
+        },
+        {
+          "id": "p2",
+          "allowedApproachIds": [
+            "far_i9b",
+            "i9_from_i6"
+          ],
+          "durationMs": 8000
+        }
+      ]
+    }
+  ],
+  "approaches": [
+    {
+      "id": "i2_from_i1",
+      "intersectionId": "I2",
+      "laneStartX": 0,
+      "laneStartY": 0,
+      "laneEndX": 320,
+      "laneEndY": -60,
+      "width": 40
+    },
+    {
+      "id": "i1_from_i2",
+      "intersectionId": "I1",
+      "laneStartX": 320,
+      "laneStartY": -60,
+      "laneEndX": 0,
+      "laneEndY": 0,
+      "width": 40
+    },
+    {
+      "id": "i3_from_i1",
+      "intersectionId": "I3",
+      "laneStartX": 0,
+      "laneStartY": 0,
+      "laneEndX": 260,
+      "laneEndY": 300,
+      "width": 40
+    },
+    {
+      "id": "i1_from_i3",
+      "intersectionId": "I1",
+      "laneStartX": 260,
+      "laneStartY": 300,
+      "laneEndX": 0,
+      "laneEndY": 0,
+      "width": 40
+    },
+    {
+      "id": "i4_from_i1",
+      "intersectionId": "I4",
+      "laneStartX": 0,
+      "laneStartY": 0,
+      "laneEndX": -280,
+      "laneEndY": 210,
+      "width": 40
+    },
+    {
+      "id": "i1_from_i4",
+      "intersectionId": "I1",
+      "laneStartX": -280,
+      "laneStartY": 210,
+      "laneEndX": 0,
+      "laneEndY": 0,
+      "width": 40
+    },
+    {
+      "id": "i7_from_i1",
+      "intersectionId": "I7",
+      "laneStartX": 0,
+      "laneStartY": 0,
+      "laneEndX": -300,
+      "laneEndY": -240,
+      "width": 40
+    },
+    {
+      "id": "i1_from_i7",
+      "intersectionId": "I1",
+      "laneStartX": -300,
+      "laneStartY": -240,
+      "laneEndX": 0,
+      "laneEndY": 0,
+      "width": 40
+    },
+    {
+      "id": "i3_from_i2",
+      "intersectionId": "I3",
+      "laneStartX": 320,
+      "laneStartY": -60,
+      "laneEndX": 260,
+      "laneEndY": 300,
+      "width": 40
+    },
+    {
+      "id": "i2_from_i3",
+      "intersectionId": "I2",
+      "laneStartX": 260,
+      "laneStartY": 300,
+      "laneEndX": 320,
+      "laneEndY": -60,
+      "width": 40
+    },
+    {
+      "id": "i5_from_i2",
+      "intersectionId": "I5",
+      "laneStartX": 320,
+      "laneStartY": -60,
+      "laneEndX": 620,
+      "laneEndY": 170,
+      "width": 40,
+      "waypoints": [
+        {
+          "x": 320,
+          "y": -60
+        },
+        {
+          "x": 436,
+          "y": 100
+        },
+        {
+          "x": 620,
+          "y": 170
+        }
+      ]
+    },
+    {
+      "id": "i2_from_i5",
+      "intersectionId": "I2",
+      "laneStartX": 620,
+      "laneStartY": 170,
+      "laneEndX": 320,
+      "laneEndY": -60,
+      "width": 40,
+      "waypoints": [
+        {
+          "x": 620,
+          "y": 170
+        },
+        {
+          "x": 436,
+          "y": 100
+        },
+        {
+          "x": 320,
+          "y": -60
+        }
+      ]
+    },
+    {
+      "id": "i6_from_i2",
+      "intersectionId": "I6",
+      "laneStartX": 320,
+      "laneStartY": -60,
+      "laneEndX": 600,
+      "laneEndY": -260,
+      "width": 40
+    },
+    {
+      "id": "i2_from_i6",
+      "intersectionId": "I2",
+      "laneStartX": 600,
+      "laneStartY": -260,
+      "laneEndX": 320,
+      "laneEndY": -60,
+      "width": 40
+    },
+    {
+      "id": "i8_from_i5",
+      "intersectionId": "I8",
+      "laneStartX": 620,
+      "laneStartY": 170,
+      "laneEndX": 930,
+      "laneEndY": -40,
+      "width": 40
+    },
+    {
+      "id": "i5_from_i8",
+      "intersectionId": "I5",
+      "laneStartX": 930,
+      "laneStartY": -40,
+      "laneEndX": 620,
+      "laneEndY": 170,
+      "width": 40
+    },
+    {
+      "id": "i8_from_i6",
+      "intersectionId": "I8",
+      "laneStartX": 600,
+      "laneStartY": -260,
+      "laneEndX": 930,
+      "laneEndY": -40,
+      "width": 40
+    },
+    {
+      "id": "i6_from_i8",
+      "intersectionId": "I6",
+      "laneStartX": 930,
+      "laneStartY": -40,
+      "laneEndX": 600,
+      "laneEndY": -260,
+      "width": 40
+    },
+    {
+      "id": "i9_from_i6",
+      "intersectionId": "I9",
+      "laneStartX": 600,
+      "laneStartY": -260,
+      "laneEndX": 260,
+      "laneEndY": -360,
+      "width": 40,
+      "waypoints": [
+        {
+          "x": 600,
+          "y": -260
+        },
+        {
+          "x": 445,
+          "y": -361
+        },
+        {
+          "x": 260,
+          "y": -360
+        }
+      ]
+    },
+    {
+      "id": "i6_from_i9",
+      "intersectionId": "I6",
+      "laneStartX": 260,
+      "laneStartY": -360,
+      "laneEndX": 600,
+      "laneEndY": -260,
+      "width": 40,
+      "waypoints": [
+        {
+          "x": 260,
+          "y": -360
+        },
+        {
+          "x": 445,
+          "y": -361
+        },
+        {
+          "x": 600,
+          "y": -260
+        }
+      ]
+    },
+    {
+      "id": "far_i3",
+      "intersectionId": "I3",
+      "laneStartX": 333,
+      "laneStartY": 560,
+      "laneEndX": 260,
+      "laneEndY": 300,
+      "width": 40
+    },
+    {
+      "id": "far_i4a",
+      "intersectionId": "I4",
+      "laneStartX": -248,
+      "laneStartY": 478,
+      "laneEndX": -280,
+      "laneEndY": 210,
+      "width": 40
+    },
+    {
+      "id": "far_i4b",
+      "intersectionId": "I4",
+      "laneStartX": -528,
+      "laneStartY": 104,
+      "laneEndX": -280,
+      "laneEndY": 210,
+      "width": 40
+    },
+    {
+      "id": "far_i5",
+      "intersectionId": "I5",
+      "laneStartX": 651,
+      "laneStartY": 438,
+      "laneEndX": 620,
+      "laneEndY": 170,
+      "width": 40
+    },
+    {
+      "id": "far_i7a",
+      "intersectionId": "I7",
+      "laneStartX": -551,
+      "laneStartY": -142,
+      "laneEndX": -300,
+      "laneEndY": -240,
+      "width": 40
+    },
+    {
+      "id": "far_i7b",
+      "intersectionId": "I7",
+      "laneStartX": -259,
+      "laneStartY": -507,
+      "laneEndX": -300,
+      "laneEndY": -240,
+      "width": 40
+    },
+    {
+      "id": "far_i8",
+      "intersectionId": "I8",
+      "laneStartX": 1200,
+      "laneStartY": -41,
+      "laneEndX": 930,
+      "laneEndY": -40,
+      "width": 40
+    },
+    {
+      "id": "far_i9a",
+      "intersectionId": "I9",
+      "laneStartX": 126,
+      "laneStartY": -125,
+      "laneEndX": 260,
+      "laneEndY": -360,
+      "width": 40
+    },
+    {
+      "id": "far_i9b",
+      "intersectionId": "I9",
+      "laneStartX": 124,
+      "laneStartY": -593,
+      "laneEndX": 260,
+      "laneEndY": -360,
+      "width": 40
+    }
+  ],
+  "pedestrianNodes": [
+    {
+      "id": "corner_i1_0",
+      "x": 3,
+      "y": -30
+    },
+    {
+      "id": "corner_i1_1",
+      "x": 30,
+      "y": 0
+    },
+    {
+      "id": "corner_i1_2",
+      "x": -7,
+      "y": 29
+    },
+    {
+      "id": "corner_i1_3",
+      "x": -28,
+      "y": -10
+    },
+    {
+      "id": "corner_i1_0_bulge",
+      "x": -64,
+      "y": 48
+    },
+    {
+      "id": "corner_i1_1_bulge",
+      "x": -62,
+      "y": -50
+    },
+    {
+      "id": "corner_i1_2_bulge",
+      "x": 79,
+      "y": -15
+    },
+    {
+      "id": "corner_i1_3_bulge",
+      "x": 52,
+      "y": 60
+    },
+    {
+      "id": "corner_i2_0",
+      "x": 313,
+      "y": -89
+    },
+    {
+      "id": "corner_i2_1",
+      "x": 341,
+      "y": -81
+    },
+    {
+      "id": "corner_i2_2",
+      "x": 332,
+      "y": -32
+    },
+    {
+      "id": "corner_i2_3",
+      "x": 290,
+      "y": -65
+    },
+    {
+      "id": "corner_i2_0_bulge",
+      "x": 307,
+      "y": 19
+    },
+    {
+      "id": "corner_i2_1_bulge",
+      "x": 241,
+      "y": -45
+    },
+    {
+      "id": "corner_i2_2_bulge",
+      "x": 385,
+      "y": -106
+    },
+    {
+      "id": "corner_i2_3_bulge",
+      "x": 367,
+      "y": 5
+    },
+    {
+      "id": "corner_i3_0",
+      "x": 286,
+      "y": 286
+    },
+    {
+      "id": "corner_i3_1",
+      "x": 268,
+      "y": 329
+    },
+    {
+      "id": "corner_i3_2",
+      "x": 230,
+      "y": 302
+    },
+    {
+      "id": "corner_i3_0_bulge",
+      "x": 208,
+      "y": 240
+    },
+    {
+      "id": "corner_i3_1_bulge",
+      "x": 273,
+      "y": 221
+    },
+    {
+      "id": "corner_i3_2_bulge",
+      "x": 282,
+      "y": 377
+    },
+    {
+      "id": "corner_i4_0",
+      "x": -256,
+      "y": 192
+    },
+    {
+      "id": "corner_i4_1",
+      "x": -276,
+      "y": 240
+    },
+    {
+      "id": "corner_i4_2",
+      "x": -308,
+      "y": 198
+    },
+    {
+      "id": "corner_i4_0_bulge",
+      "x": -354,
+      "y": 179
+    },
+    {
+      "id": "corner_i4_1_bulge",
+      "x": -216,
+      "y": 162
+    },
+    {
+      "id": "corner_i4_2_bulge",
+      "x": -271,
+      "y": 289
+    },
+    {
+      "id": "corner_i5_0",
+      "x": 644,
+      "y": 152
+    },
+    {
+      "id": "corner_i5_1",
+      "x": 623,
+      "y": 200
+    },
+    {
+      "id": "corner_i5_2",
+      "x": 593,
+      "y": 157
+    },
+    {
+      "id": "corner_i5_0_bulge",
+      "x": 545,
+      "y": 142
+    },
+    {
+      "id": "corner_i5_1_bulge",
+      "x": 686,
+      "y": 125
+    },
+    {
+      "id": "corner_i5_2_bulge",
+      "x": 629,
+      "y": 249
+    },
+    {
+      "id": "corner_i6_0",
+      "x": 600,
+      "y": -290
+    },
+    {
+      "id": "corner_i6_1",
+      "x": 630,
+      "y": -261
+    },
+    {
+      "id": "corner_i6_2",
+      "x": 583,
+      "y": -235
+    },
+    {
+      "id": "corner_i6_0_bulge",
+      "x": 535,
+      "y": -214
+    },
+    {
+      "id": "corner_i6_1_bulge",
+      "x": 533,
+      "y": -304
+    },
+    {
+      "id": "corner_i6_2_bulge",
+      "x": 667,
+      "y": -216
+    },
+    {
+      "id": "corner_i7_0",
+      "x": -295,
+      "y": -270
+    },
+    {
+      "id": "corner_i7_1",
+      "x": -277,
+      "y": -221
+    },
+    {
+      "id": "corner_i7_2",
+      "x": -328,
+      "y": -229
+    },
+    {
+      "id": "corner_i7_0_bulge",
+      "x": -375,
+      "y": -211
+    },
+    {
+      "id": "corner_i7_1_bulge",
+      "x": -288,
+      "y": -319
+    },
+    {
+      "id": "corner_i7_2_bulge",
+      "x": -238,
+      "y": -190
+    },
+    {
+      "id": "corner_i8_0",
+      "x": 960,
+      "y": -40
+    },
+    {
+      "id": "corner_i8_1",
+      "x": 921,
+      "y": -11
+    },
+    {
+      "id": "corner_i8_2",
+      "x": 921,
+      "y": -69
+    },
+    {
+      "id": "corner_i8_0_bulge",
+      "x": 863,
+      "y": -84
+    },
+    {
+      "id": "corner_i8_1_bulge",
+      "x": 1010,
+      "y": -40
+    },
+    {
+      "id": "corner_i8_2_bulge",
+      "x": 864,
+      "y": 5
+    },
+    {
+      "id": "corner_i9_0",
+      "x": 290,
+      "y": -360
+    },
+    {
+      "id": "corner_i9_1",
+      "x": 245,
+      "y": -334
+    },
+    {
+      "id": "corner_i9_2",
+      "x": 245,
+      "y": -386
+    },
+    {
+      "id": "corner_i9_0_bulge",
+      "x": 220,
+      "y": -429
+    },
+    {
+      "id": "corner_i9_1_bulge",
+      "x": 340,
+      "y": -360
+    },
+    {
+      "id": "corner_i9_2_bulge",
+      "x": 220,
+      "y": -291
+    },
+    {
+      "id": "far_far_i3",
+      "x": 338,
+      "y": 579
+    },
+    {
+      "id": "sidewalk_far_i3_spur_near",
+      "x": 226,
+      "y": 309
+    },
+    {
+      "id": "sidewalk_far_i3_spur_far",
+      "x": 299,
+      "y": 569
+    },
+    {
+      "id": "far_far_i4a",
+      "x": -246,
+      "y": 498
+    },
+    {
+      "id": "sidewalk_far_i4a_spur_near",
+      "x": -315,
+      "y": 214
+    },
+    {
+      "id": "sidewalk_far_i4a_spur_far",
+      "x": -283,
+      "y": 482
+    },
+    {
+      "id": "far_far_i4b",
+      "x": -546,
+      "y": 96
+    },
+    {
+      "id": "sidewalk_far_i4b_spur_near",
+      "x": -266,
+      "y": 178
+    },
+    {
+      "id": "sidewalk_far_i4b_spur_far",
+      "x": -514,
+      "y": 72
+    },
+    {
+      "id": "far_far_i5",
+      "x": 653,
+      "y": 458
+    },
+    {
+      "id": "sidewalk_far_i5_spur_near",
+      "x": 585,
+      "y": 174
+    },
+    {
+      "id": "sidewalk_far_i5_spur_far",
+      "x": 616,
+      "y": 442
+    },
+    {
+      "id": "far_far_i7a",
+      "x": -570,
+      "y": -135
+    },
+    {
+      "id": "sidewalk_far_i7a_spur_near",
+      "x": -313,
+      "y": -273
+    },
+    {
+      "id": "sidewalk_far_i7a_spur_far",
+      "x": -564,
+      "y": -175
+    },
+    {
+      "id": "far_far_i7b",
+      "x": -256,
+      "y": -527
+    },
+    {
+      "id": "sidewalk_far_i7b_spur_near",
+      "x": -265,
+      "y": -235
+    },
+    {
+      "id": "sidewalk_far_i7b_spur_far",
+      "x": -224,
+      "y": -502
+    },
+    {
+      "id": "far_far_i8",
+      "x": 1220,
+      "y": -41
+    },
+    {
+      "id": "sidewalk_far_i8_spur_near",
+      "x": 930,
+      "y": -5
+    },
+    {
+      "id": "sidewalk_far_i8_spur_far",
+      "x": 1200,
+      "y": -6
+    },
+    {
+      "id": "far_far_i9a",
+      "x": 116,
+      "y": -108
+    },
+    {
+      "id": "sidewalk_far_i9a_spur_near",
+      "x": 230,
+      "y": -377
+    },
+    {
+      "id": "sidewalk_far_i9a_spur_far",
+      "x": 96,
+      "y": -142
+    },
+    {
+      "id": "far_far_i9b",
+      "x": 114,
+      "y": -610
+    },
+    {
+      "id": "sidewalk_far_i9b_spur_near",
+      "x": 290,
+      "y": -378
+    },
+    {
+      "id": "sidewalk_far_i9b_spur_far",
+      "x": 154,
+      "y": -611
+    },
+    {
+      "id": "sidewalk_i2_from_i1_0",
+      "x": 326,
+      "y": -26
+    },
+    {
+      "id": "sidewalk_i2_from_i1_1",
+      "x": 6,
+      "y": 34
+    },
+    {
+      "id": "sidewalk_i3_from_i1_0",
+      "x": 234,
+      "y": 323
+    },
+    {
+      "id": "sidewalk_i3_from_i1_1",
+      "x": -26,
+      "y": 23
+    },
+    {
+      "id": "sidewalk_i4_from_i1_0",
+      "x": -301,
+      "y": 182
+    },
+    {
+      "id": "sidewalk_i4_from_i1_1",
+      "x": -21,
+      "y": -28
+    },
+    {
+      "id": "sidewalk_i7_from_i1_0",
+      "x": -278,
+      "y": -267
+    },
+    {
+      "id": "sidewalk_i7_from_i1_1",
+      "x": 22,
+      "y": -27
+    },
+    {
+      "id": "sidewalk_i3_from_i2_0",
+      "x": 225,
+      "y": 294
+    },
+    {
+      "id": "sidewalk_i3_from_i2_1",
+      "x": 285,
+      "y": -66
+    },
+    {
+      "id": "sidewalk_i5_from_i2_0",
+      "x": 608,
+      "y": 203
+    },
+    {
+      "id": "sidewalk_i5_from_i2_1",
+      "x": 415,
+      "y": 128
+    },
+    {
+      "id": "sidewalk_i5_from_i2_2",
+      "x": 292,
+      "y": -39
+    },
+    {
+      "id": "sidewalk_i6_from_i2_0",
+      "x": 620,
+      "y": -232
+    },
+    {
+      "id": "sidewalk_i6_from_i2_1",
+      "x": 340,
+      "y": -32
+    },
+    {
+      "id": "sidewalk_i8_from_i5_0",
+      "x": 950,
+      "y": -11
+    },
+    {
+      "id": "sidewalk_i8_from_i5_1",
+      "x": 640,
+      "y": 199
+    },
+    {
+      "id": "sidewalk_i8_from_i6_0",
+      "x": 911,
+      "y": -11
+    },
+    {
+      "id": "sidewalk_i8_from_i6_1",
+      "x": 581,
+      "y": -231
+    },
+    {
+      "id": "sidewalk_i9_from_i6_0",
+      "x": 260,
+      "y": -395
+    },
+    {
+      "id": "sidewalk_i9_from_i6_1",
+      "x": 455,
+      "y": -395
+    },
+    {
+      "id": "sidewalk_i9_from_i6_2",
+      "x": 619,
+      "y": -289
+    }
+  ],
+  "pedestrianEdges": [
+    {
+      "from": "corner_i1_0",
+      "to": "corner_i1_0_bulge",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i1_0_bulge",
+      "to": "corner_i1_1",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i1_1",
+      "to": "corner_i1_1_bulge",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i1_1_bulge",
+      "to": "corner_i1_2",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i1_2",
+      "to": "corner_i1_2_bulge",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i1_2_bulge",
+      "to": "corner_i1_3",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i1_3",
+      "to": "corner_i1_3_bulge",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i1_3_bulge",
+      "to": "corner_i1_0",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i1_3",
+      "to": "corner_i1_0",
+      "kind": "crosswalk",
+      "crossingId": "cross_i1_from_i3",
+      "approachId": "i1_from_i3"
+    },
+    {
+      "from": "corner_i1_0",
+      "to": "corner_i1_1",
+      "kind": "crosswalk",
+      "crossingId": "cross_i1_from_i4",
+      "approachId": "i1_from_i4"
+    },
+    {
+      "from": "corner_i1_1",
+      "to": "corner_i1_2",
+      "kind": "crosswalk",
+      "crossingId": "cross_i1_from_i7",
+      "approachId": "i1_from_i7"
+    },
+    {
+      "from": "corner_i1_2",
+      "to": "corner_i1_3",
+      "kind": "crosswalk",
+      "crossingId": "cross_i1_from_i2",
+      "approachId": "i1_from_i2"
+    },
+    {
+      "from": "corner_i2_0",
+      "to": "corner_i2_0_bulge",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i2_0_bulge",
+      "to": "corner_i2_1",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i2_1",
+      "to": "corner_i2_1_bulge",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i2_1_bulge",
+      "to": "corner_i2_2",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i2_2",
+      "to": "corner_i2_2_bulge",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i2_2_bulge",
+      "to": "corner_i2_3",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i2_3",
+      "to": "corner_i2_3_bulge",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i2_3_bulge",
+      "to": "corner_i2_0",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i2_3",
+      "to": "corner_i2_0",
+      "kind": "crosswalk",
+      "crossingId": "cross_i2_from_i5",
+      "approachId": "i2_from_i5"
+    },
+    {
+      "from": "corner_i2_0",
+      "to": "corner_i2_1",
+      "kind": "crosswalk",
+      "crossingId": "cross_i2_from_i3",
+      "approachId": "i2_from_i3"
+    },
+    {
+      "from": "corner_i2_1",
+      "to": "corner_i2_2",
+      "kind": "crosswalk",
+      "crossingId": "cross_i2_from_i1",
+      "approachId": "i2_from_i1"
+    },
+    {
+      "from": "corner_i2_2",
+      "to": "corner_i2_3",
+      "kind": "crosswalk",
+      "crossingId": "cross_i2_from_i6",
+      "approachId": "i2_from_i6"
+    },
+    {
+      "from": "corner_i3_0",
+      "to": "corner_i3_0_bulge",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i3_0_bulge",
+      "to": "corner_i3_1",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i3_1",
+      "to": "corner_i3_1_bulge",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i3_1_bulge",
+      "to": "corner_i3_2",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i3_2",
+      "to": "corner_i3_2_bulge",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i3_2_bulge",
+      "to": "corner_i3_0",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i3_2",
+      "to": "corner_i3_0",
+      "kind": "crosswalk",
+      "crossingId": "cross_far_i3",
+      "approachId": "far_i3"
+    },
+    {
+      "from": "corner_i3_0",
+      "to": "corner_i3_1",
+      "kind": "crosswalk",
+      "crossingId": "cross_i3_from_i1",
+      "approachId": "i3_from_i1"
+    },
+    {
+      "from": "corner_i3_1",
+      "to": "corner_i3_2",
+      "kind": "crosswalk",
+      "crossingId": "cross_i3_from_i2",
+      "approachId": "i3_from_i2"
+    },
+    {
+      "from": "corner_i4_0",
+      "to": "corner_i4_0_bulge",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i4_0_bulge",
+      "to": "corner_i4_1",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i4_1",
+      "to": "corner_i4_1_bulge",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i4_1_bulge",
+      "to": "corner_i4_2",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i4_2",
+      "to": "corner_i4_2_bulge",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i4_2_bulge",
+      "to": "corner_i4_0",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i4_2",
+      "to": "corner_i4_0",
+      "kind": "crosswalk",
+      "crossingId": "cross_far_i4a",
+      "approachId": "far_i4a"
+    },
+    {
+      "from": "corner_i4_0",
+      "to": "corner_i4_1",
+      "kind": "crosswalk",
+      "crossingId": "cross_far_i4b",
+      "approachId": "far_i4b"
+    },
+    {
+      "from": "corner_i4_1",
+      "to": "corner_i4_2",
+      "kind": "crosswalk",
+      "crossingId": "cross_i4_from_i1",
+      "approachId": "i4_from_i1"
+    },
+    {
+      "from": "corner_i5_0",
+      "to": "corner_i5_0_bulge",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i5_0_bulge",
+      "to": "corner_i5_1",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i5_1",
+      "to": "corner_i5_1_bulge",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i5_1_bulge",
+      "to": "corner_i5_2",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i5_2",
+      "to": "corner_i5_2_bulge",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i5_2_bulge",
+      "to": "corner_i5_0",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i5_2",
+      "to": "corner_i5_0",
+      "kind": "crosswalk",
+      "crossingId": "cross_far_i5",
+      "approachId": "far_i5"
+    },
+    {
+      "from": "corner_i5_0",
+      "to": "corner_i5_1",
+      "kind": "crosswalk",
+      "crossingId": "cross_i5_from_i2",
+      "approachId": "i5_from_i2"
+    },
+    {
+      "from": "corner_i5_1",
+      "to": "corner_i5_2",
+      "kind": "crosswalk",
+      "crossingId": "cross_i5_from_i8",
+      "approachId": "i5_from_i8"
+    },
+    {
+      "from": "corner_i6_0",
+      "to": "corner_i6_0_bulge",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i6_0_bulge",
+      "to": "corner_i6_1",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i6_1",
+      "to": "corner_i6_1_bulge",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i6_1_bulge",
+      "to": "corner_i6_2",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i6_2",
+      "to": "corner_i6_2_bulge",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i6_2_bulge",
+      "to": "corner_i6_0",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i6_2",
+      "to": "corner_i6_0",
+      "kind": "crosswalk",
+      "crossingId": "cross_i6_from_i8",
+      "approachId": "i6_from_i8"
+    },
+    {
+      "from": "corner_i6_0",
+      "to": "corner_i6_1",
+      "kind": "crosswalk",
+      "crossingId": "cross_i6_from_i2",
+      "approachId": "i6_from_i2"
+    },
+    {
+      "from": "corner_i6_1",
+      "to": "corner_i6_2",
+      "kind": "crosswalk",
+      "crossingId": "cross_i6_from_i9",
+      "approachId": "i6_from_i9"
+    },
+    {
+      "from": "corner_i7_0",
+      "to": "corner_i7_0_bulge",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i7_0_bulge",
+      "to": "corner_i7_1",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i7_1",
+      "to": "corner_i7_1_bulge",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i7_1_bulge",
+      "to": "corner_i7_2",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i7_2",
+      "to": "corner_i7_2_bulge",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i7_2_bulge",
+      "to": "corner_i7_0",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i7_2",
+      "to": "corner_i7_0",
+      "kind": "crosswalk",
+      "crossingId": "cross_i7_from_i1",
+      "approachId": "i7_from_i1"
+    },
+    {
+      "from": "corner_i7_0",
+      "to": "corner_i7_1",
+      "kind": "crosswalk",
+      "crossingId": "cross_far_i7a",
+      "approachId": "far_i7a"
+    },
+    {
+      "from": "corner_i7_1",
+      "to": "corner_i7_2",
+      "kind": "crosswalk",
+      "crossingId": "cross_far_i7b",
+      "approachId": "far_i7b"
+    },
+    {
+      "from": "corner_i8_0",
+      "to": "corner_i8_0_bulge",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i8_0_bulge",
+      "to": "corner_i8_1",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i8_1",
+      "to": "corner_i8_1_bulge",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i8_1_bulge",
+      "to": "corner_i8_2",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i8_2",
+      "to": "corner_i8_2_bulge",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i8_2_bulge",
+      "to": "corner_i8_0",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i8_2",
+      "to": "corner_i8_0",
+      "kind": "crosswalk",
+      "crossingId": "cross_i8_from_i5",
+      "approachId": "i8_from_i5"
+    },
+    {
+      "from": "corner_i8_0",
+      "to": "corner_i8_1",
+      "kind": "crosswalk",
+      "crossingId": "cross_i8_from_i6",
+      "approachId": "i8_from_i6"
+    },
+    {
+      "from": "corner_i8_1",
+      "to": "corner_i8_2",
+      "kind": "crosswalk",
+      "crossingId": "cross_far_i8",
+      "approachId": "far_i8"
+    },
+    {
+      "from": "corner_i9_0",
+      "to": "corner_i9_0_bulge",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i9_0_bulge",
+      "to": "corner_i9_1",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i9_1",
+      "to": "corner_i9_1_bulge",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i9_1_bulge",
+      "to": "corner_i9_2",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i9_2",
+      "to": "corner_i9_2_bulge",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i9_2_bulge",
+      "to": "corner_i9_0",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i9_2",
+      "to": "corner_i9_0",
+      "kind": "crosswalk",
+      "crossingId": "cross_far_i9a",
+      "approachId": "far_i9a"
+    },
+    {
+      "from": "corner_i9_0",
+      "to": "corner_i9_1",
+      "kind": "crosswalk",
+      "crossingId": "cross_far_i9b",
+      "approachId": "far_i9b"
+    },
+    {
+      "from": "corner_i9_1",
+      "to": "corner_i9_2",
+      "kind": "crosswalk",
+      "crossingId": "cross_i9_from_i6",
+      "approachId": "i9_from_i6"
+    },
+    {
+      "from": "corner_i3_0",
+      "to": "sidewalk_far_i3_spur_near",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "sidewalk_far_i3_spur_near",
+      "to": "sidewalk_far_i3_spur_far",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "sidewalk_far_i3_spur_far",
+      "to": "far_far_i3",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i4_0",
+      "to": "sidewalk_far_i4a_spur_near",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "sidewalk_far_i4a_spur_near",
+      "to": "sidewalk_far_i4a_spur_far",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "sidewalk_far_i4a_spur_far",
+      "to": "far_far_i4a",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i4_1",
+      "to": "sidewalk_far_i4b_spur_near",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "sidewalk_far_i4b_spur_near",
+      "to": "sidewalk_far_i4b_spur_far",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "sidewalk_far_i4b_spur_far",
+      "to": "far_far_i4b",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i5_0",
+      "to": "sidewalk_far_i5_spur_near",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "sidewalk_far_i5_spur_near",
+      "to": "sidewalk_far_i5_spur_far",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "sidewalk_far_i5_spur_far",
+      "to": "far_far_i5",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i7_1",
+      "to": "sidewalk_far_i7a_spur_near",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "sidewalk_far_i7a_spur_near",
+      "to": "sidewalk_far_i7a_spur_far",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "sidewalk_far_i7a_spur_far",
+      "to": "far_far_i7a",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i7_2",
+      "to": "sidewalk_far_i7b_spur_near",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "sidewalk_far_i7b_spur_near",
+      "to": "sidewalk_far_i7b_spur_far",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "sidewalk_far_i7b_spur_far",
+      "to": "far_far_i7b",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i8_2",
+      "to": "sidewalk_far_i8_spur_near",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "sidewalk_far_i8_spur_near",
+      "to": "sidewalk_far_i8_spur_far",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "sidewalk_far_i8_spur_far",
+      "to": "far_far_i8",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i9_0",
+      "to": "sidewalk_far_i9a_spur_near",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "sidewalk_far_i9a_spur_near",
+      "to": "sidewalk_far_i9a_spur_far",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "sidewalk_far_i9a_spur_far",
+      "to": "far_far_i9a",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i9_1",
+      "to": "sidewalk_far_i9b_spur_near",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "sidewalk_far_i9b_spur_near",
+      "to": "sidewalk_far_i9b_spur_far",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "sidewalk_far_i9b_spur_far",
+      "to": "far_far_i9b",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i2_2",
+      "to": "sidewalk_i2_from_i1_0",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "sidewalk_i2_from_i1_0",
+      "to": "sidewalk_i2_from_i1_1",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "sidewalk_i2_from_i1_1",
+      "to": "corner_i1_3",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i3_1",
+      "to": "sidewalk_i3_from_i1_0",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "sidewalk_i3_from_i1_0",
+      "to": "sidewalk_i3_from_i1_1",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "sidewalk_i3_from_i1_1",
+      "to": "corner_i1_0",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i4_2",
+      "to": "sidewalk_i4_from_i1_0",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "sidewalk_i4_from_i1_0",
+      "to": "sidewalk_i4_from_i1_1",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "sidewalk_i4_from_i1_1",
+      "to": "corner_i1_1",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i7_0",
+      "to": "sidewalk_i7_from_i1_0",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "sidewalk_i7_from_i1_0",
+      "to": "sidewalk_i7_from_i1_1",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "sidewalk_i7_from_i1_1",
+      "to": "corner_i1_2",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i3_2",
+      "to": "sidewalk_i3_from_i2_0",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "sidewalk_i3_from_i2_0",
+      "to": "sidewalk_i3_from_i2_1",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "sidewalk_i3_from_i2_1",
+      "to": "corner_i2_1",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i5_1",
+      "to": "sidewalk_i5_from_i2_0",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "sidewalk_i5_from_i2_0",
+      "to": "sidewalk_i5_from_i2_1",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "sidewalk_i5_from_i2_1",
+      "to": "sidewalk_i5_from_i2_2",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "sidewalk_i5_from_i2_2",
+      "to": "corner_i2_0",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i6_1",
+      "to": "sidewalk_i6_from_i2_0",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "sidewalk_i6_from_i2_0",
+      "to": "sidewalk_i6_from_i2_1",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "sidewalk_i6_from_i2_1",
+      "to": "corner_i2_3",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i8_0",
+      "to": "sidewalk_i8_from_i5_0",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "sidewalk_i8_from_i5_0",
+      "to": "sidewalk_i8_from_i5_1",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "sidewalk_i8_from_i5_1",
+      "to": "corner_i5_2",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i8_1",
+      "to": "sidewalk_i8_from_i6_0",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "sidewalk_i8_from_i6_0",
+      "to": "sidewalk_i8_from_i6_1",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "sidewalk_i8_from_i6_1",
+      "to": "corner_i6_0",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "corner_i9_2",
+      "to": "sidewalk_i9_from_i6_0",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "sidewalk_i9_from_i6_0",
+      "to": "sidewalk_i9_from_i6_1",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "sidewalk_i9_from_i6_1",
+      "to": "sidewalk_i9_from_i6_2",
+      "kind": "sidewalk"
+    },
+    {
+      "from": "sidewalk_i9_from_i6_2",
+      "to": "corner_i6_2",
+      "kind": "sidewalk"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "$id": "SignalDecision",
+  "definitions": {
+    "PhaseCandidate": {
+      "type": "object",
+      "required": ["phaseId", "queueLength", "waitS"],
+      "properties": {
+        "phaseId": { "type": "string" },
+        "queueLength": { "type": "integer", "minimum": 0 },
+        "waitS": { "type": "number", "minimum": 0 }
+      }
+    },
+    "SignalDecisionRequest": {
+      "type": "object",
+      "required": ["intersectionId", "currentPhaseId", "timeInPhaseMs", "phaseCandidates"],
+      "properties": {
+        "intersectionId": { "type": "string" },
+        "currentPhaseId": { "type": "string" },
+        "timeInPhaseMs": { "type": "number", "minimum": 0 },
+        "phaseCandidates": { "type": "array", "items": { "$ref": "#/definitions/PhaseCandidate" } },
+        "pedestrianCrossings": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["crossingId", "queueLength", "waitS"],
+            "properties": {
+              "crossingId": { "type": "string" },
+              "queueLength": { "type": "integer", "minimum": 0 },
+              "waitS": { "type": "number", "minimum": 0 }
+            }
+          }
+        },
+        "approachStates": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["approachId", "queueLength", "waitS"],
+            "properties": {
+              "approachId": { "type": "string" },
+              "queueLength": { "type": "integer", "minimum": 0 },
+              "waitS": { "type": "number", "minimum": 0 }
+            }
+          }
+        },
+        "neighborIntersections": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["intersectionId", "currentPhaseId", "timeInPhaseMs", "totalPressure"],
+            "properties": {
+              "intersectionId": { "type": "string" },
+              "currentPhaseId": { "type": "string" },
+              "timeInPhaseMs": { "type": "number", "minimum": 0 },
+              "totalPressure": { "type": "number", "minimum": 0 }
+            }
+          }
+        },
+        "requestedController": { "enum": ["rule_based", "rl"] },
+        "evContext": {
+          "oneOf": [
+            { "type": "null" },
+            {
+              "type": "object",
+              "required": ["evId", "etaS", "requiredPhaseId"],
+              "properties": {
+                "evId": { "type": "string" },
+                "etaS": { "type": "number" },
+                "requiredPhaseId": { "type": "string" }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "SignalDecisionResponse": {
+      "type": "object",
+      "required": ["phaseId", "controller"],
+      "properties": {
+        "phaseId": { "type": "string" },
+        "controller": { "enum": ["rule_based", "rl"] }
+      }
+    }
+  },
+  "type": "object"
+}

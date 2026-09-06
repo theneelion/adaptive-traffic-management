@@ -1,0 +1,67 @@
+{
+  "$id": "RoomEventMessage",
+  "type": "object",
+  "required": ["type", "payload", "ts"],
+  "properties": {
+    "type": { "const": "room_event" },
+    "ts": { "type": "number" },
+    "payload": {
+      "oneOf": [
+        {
+          "type": "object",
+          "required": ["kind", "clientId", "carId"],
+          "properties": {
+            "kind": { "const": "user_join" },
+            "clientId": { "type": "string" },
+            "carId": { "type": "string" }
+          }
+        },
+        {
+          "type": "object",
+          "required": ["kind", "clientId", "carId"],
+          "properties": {
+            "kind": { "const": "user_leave" },
+            "clientId": { "type": "string" },
+            "carId": { "type": "string" }
+          }
+        },
+        {
+          "type": "object",
+          "required": ["kind", "entities", "collisionKind"],
+          "properties": {
+            "kind": { "const": "collision" },
+            "entities": { "type": "array", "items": { "type": "string" }, "minItems": 2, "maxItems": 2 },
+            "collisionKind": { "enum": ["vehicle_vehicle", "vehicle_pedestrian"] }
+          }
+        },
+        {
+          "type": "object",
+          "required": ["kind", "evId", "route"],
+          "properties": {
+            "kind": { "const": "ev_spawn" },
+            "evId": { "type": "string" },
+            "route": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        {
+          "type": "object",
+          "required": ["kind", "intersectionId", "etaS"],
+          "properties": {
+            "kind": { "const": "ev_preempt" },
+            "intersectionId": { "type": "string" },
+            "etaS": { "type": "number" }
+          }
+        },
+        {
+          "type": "object",
+          "required": ["kind", "evId", "transitTimeS"],
+          "properties": {
+            "kind": { "const": "ev_complete" },
+            "evId": { "type": "string" },
+            "transitTimeS": { "type": "number" }
+          }
+        }
+      ]
+    }
+  }
+}

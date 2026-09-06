@@ -1,0 +1,38 @@
+{
+  "$id": "ScenarioControl",
+  "definitions": {
+    "StartScenarioMessage": {
+      "type": "object",
+      "required": ["type", "payload", "ts"],
+      "properties": {
+        "type": { "const": "start_scenario" },
+        "ts": { "type": "number" },
+        "payload": {
+          "type": "object",
+          "required": ["scenario"],
+          "properties": {
+            "scenario": { "enum": ["rush_hour", "emergency_vehicle", "chaos", "pedestrian_pressure"] }
+          }
+        }
+      }
+    },
+    "ScenarioCompleteMessage": {
+      "type": "object",
+      "required": ["type", "payload", "ts"],
+      "properties": {
+        "type": { "const": "scenario_complete" },
+        "ts": { "type": "number" },
+        "payload": {
+          "type": "object",
+          "required": ["scenario", "result", "avgWaitDeltaPct"],
+          "properties": {
+            "scenario": { "type": "string" },
+            "result": { "enum": ["pass", "fail"] },
+            "avgWaitDeltaPct": { "type": "number" }
+          }
+        }
+      }
+    }
+  },
+  "type": "object"
+}
