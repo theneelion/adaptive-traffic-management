@@ -1,6 +1,0 @@
-packages:
-  - "sim-server"
-  - "frontend"
-  - "shared-contracts"
-allowBuilds:
-  esbuild: true
