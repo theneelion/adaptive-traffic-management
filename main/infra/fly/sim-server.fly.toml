@@ -1,0 +1,25 @@
+app = "traffic-sim-server"
+primary_region = "iad"
+
+[build]
+  dockerfile = "../../sim-server/Dockerfile"
+
+[env]
+  AI_SERVICE_URL = "http://traffic-ai-service.internal:8000"
+  SESSION_STORE_DIR = "/data/sessions"
+  ARRIVAL_RATE_PER_MIN = "20"
+
+[[mounts]]
+  source = "sessions_data"
+  destination = "/data"
+
+[[services]]
+  internal_port = 8080
+  protocol = "tcp"
+
+  [[services.ports]]
+    port = 80
+    handlers = ["http"]
+  [[services.ports]]
+    port = 443
+    handlers = ["tls", "http"]

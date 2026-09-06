@@ -1,0 +1,271 @@
+{
+	"textures": [
+		{
+			"image": "game-atlas.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 239,
+				"h": 48
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "car_ev",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 36,
+						"h": 18
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 1,
+						"w": 35,
+						"h": 17
+					},
+					"frame": {
+						"x": 0,
+						"y": 0,
+						"w": 35,
+						"h": 17
+					}
+				},
+				{
+					"filename": "car_idm",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 36,
+						"h": 18
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 1,
+						"w": 35,
+						"h": 17
+					},
+					"frame": {
+						"x": 35,
+						"y": 0,
+						"w": 35,
+						"h": 17
+					}
+				},
+				{
+					"filename": "car_user",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 36,
+						"h": 18
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 1,
+						"w": 35,
+						"h": 17
+					},
+					"frame": {
+						"x": 70,
+						"y": 0,
+						"w": 35,
+						"h": 17
+					}
+				},
+				{
+					"filename": "signal_green",
+					"rotated": true,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 34
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 34
+					},
+					"frame": {
+						"x": 105,
+						"y": 0,
+						"w": 16,
+						"h": 34
+					}
+				},
+				{
+					"filename": "signal_red",
+					"rotated": true,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 34
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 34
+					},
+					"frame": {
+						"x": 139,
+						"y": 0,
+						"w": 16,
+						"h": 34
+					}
+				},
+				{
+					"filename": "signal_yellow",
+					"rotated": true,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 34
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 34
+					},
+					"frame": {
+						"x": 173,
+						"y": 0,
+						"w": 16,
+						"h": 34
+					}
+				},
+				{
+					"filename": "crosswalk",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					},
+					"frame": {
+						"x": 207,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					}
+				},
+				{
+					"filename": "road_intersection",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					},
+					"frame": {
+						"x": 105,
+						"y": 16,
+						"w": 32,
+						"h": 32
+					}
+				},
+				{
+					"filename": "road_straight",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					},
+					"frame": {
+						"x": 137,
+						"y": 16,
+						"w": 32,
+						"h": 32
+					}
+				},
+				{
+					"filename": "sidewalk",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					},
+					"frame": {
+						"x": 169,
+						"y": 16,
+						"w": 32,
+						"h": 32
+					}
+				},
+				{
+					"filename": "pedestrian_walk_0",
+					"rotated": true,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 4,
+						"y": 0,
+						"w": 8,
+						"h": 15
+					},
+					"frame": {
+						"x": 0,
+						"y": 17,
+						"w": 8,
+						"h": 15
+					}
+				},
+				{
+					"filename": "pedestrian_walk_1",
+					"rotated": true,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 4,
+						"y": 0,
+						"w": 8,
+						"h": 15
+					},
+					"frame": {
+						"x": 15,
+						"y": 17,
+						"w": 8,
+						"h": 15
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "http://github.com/odrick/free-tex-packer-core",
+		"version": "0.3.9"
+	}
+}

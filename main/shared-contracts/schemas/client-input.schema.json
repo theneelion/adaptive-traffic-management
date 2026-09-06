@@ -1,0 +1,20 @@
+{
+  "$id": "ClientInputMessage",
+  "type": "object",
+  "required": ["type", "payload", "ts"],
+  "properties": {
+    "type": { "const": "input" },
+    "ts": { "type": "number" },
+    "payload": {
+      "type": "object",
+      "required": ["carId", "throttle", "brake", "steer", "inputMethod"],
+      "properties": {
+        "carId": { "type": "string" },
+        "throttle": { "type": "number", "minimum": 0, "maximum": 1 },
+        "brake": { "type": "number", "minimum": 0, "maximum": 1 },
+        "steer": { "type": "number", "minimum": -1, "maximum": 1 },
+        "inputMethod": { "enum": ["keyboard", "touch"] }
+      }
+    }
+  }
+}

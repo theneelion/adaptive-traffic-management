@@ -1,0 +1,4 @@
+packages:
+  - "sim-server"
+  - "frontend"
+  - "shared-contracts"

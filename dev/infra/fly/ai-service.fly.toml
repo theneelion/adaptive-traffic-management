@@ -1,0 +1,10 @@
+app = "traffic-ai-service"
+primary_region = "iad"
+
+[build]
+  dockerfile = "../../ai-service/Dockerfile"
+
+[[services]]
+  internal_port = 8000
+  protocol = "tcp"
+  # No public [[services.ports]] — reached only via Fly's private .internal networking from traffic-sim-server.

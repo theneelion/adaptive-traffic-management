@@ -1,0 +1,27 @@
+{
+  "name": "shared-contracts",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./generated/ts/client-input.schema": { "types": "./generated/ts/client-input.schema.d.ts" },
+    "./generated/ts/state-snapshot.schema": { "types": "./generated/ts/state-snapshot.schema.d.ts" },
+    "./generated/ts/room-events.schema": { "types": "./generated/ts/room-events.schema.d.ts" },
+    "./generated/ts/signal-decision.schema": { "types": "./generated/ts/signal-decision.schema.d.ts" },
+    "./generated/ts/controller-mode.schema": { "types": "./generated/ts/controller-mode.schema.d.ts" },
+    "./generated/ts/scenario-control.schema": { "types": "./generated/ts/scenario-control.schema.d.ts" },
+    "./generated/ts/kpi-update.schema": { "types": "./generated/ts/kpi-update.schema.d.ts" }
+  },
+  "scripts": {
+    "generate": "node scripts/generate.mjs",
+    "build": "echo 'no build step, generated/ is the artifact'",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "json-schema-to-typescript": "^15.0.2"
+  },
+  "devDependencies": {
+    "vitest": "^3.2.6",
+    "typescript": "^5.5.4"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "$id": "ControllerModeMessage",
+  "type": "object",
+  "required": ["type", "payload", "ts"],
+  "properties": {
+    "type": { "const": "controller_mode" },
+    "ts": { "type": "number" },
+    "payload": {
+      "type": "object",
+      "required": ["mode"],
+      "properties": { "mode": { "enum": ["rule_based", "rl"] } }
+    }
+  }
+}
